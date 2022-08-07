@@ -57,7 +57,46 @@ font-size: 25px;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    color:black
+    color:black;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
    
+}
+
+
+.socials::after {
+    content:'';
+    height:3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.socials:hover::after {
+    width: 100%;
+    color: skyblue
+}
+
+
+.socials ul li {
+    list-style: none;
+    display: flex;
+    position:relative;
+}
+.socials ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.1s;
+   
+    
+}
+
+.socials ul li a:hover {
+    color: black;
+    font-weight: bolder;
 }
 
